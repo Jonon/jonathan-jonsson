@@ -37,16 +37,33 @@
 	--color-neutral-800: #282734;
 	--color-neutral-900: #1b1a23;
 	--color-neutral-950: #131319;
+	/* ------------------------------ */
+	/* semantic tokens */
+	--primary-color: var(--color-primary-300);
+
+	--surface: var(--color-neutral-900);
+	--surface-darker: var(--color-neutral-950);
+	--surface-lighter: var(--color-neutral-800);
+
+	--font-heading: font-family: "JetBrains Mono", monospace;
+	--font-normal: font-family: "Geist", sans-serif;
+	--font-accent: font-family: "Space Mono";
+
+	--site-title-color: var(--primary-color);
+
+	--border-color: var(--primary-color);
+
+	--icon-color: var(--color-primary-100);
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
-	font-family: "JetBrains Mono", monospace;
+	font-family: var(--font-heading);
 	font-optical-sizing: auto;
 	font-style: normal;
 }
 
 p {
-	font-family: "Geist", sans-serif;
+	font-family: var(--font-normal);
 	font-optical-sizing: auto;
 	font-weight: 500;
 	font-style: normal;
