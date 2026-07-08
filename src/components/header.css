@@ -1,0 +1,17 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: var(--spacing-md) var(--spacing-lg);
+	border-bottom: 1px solid var(--border-color);
+}
+
+.title {
+	color: var(--site-title-color);
+	font-size: 1.3rem;
+}
+
+.IoMenuSharp {
+	font-size: var(--icon-size-2xl);
+	color: var(--icon-color);
+}
