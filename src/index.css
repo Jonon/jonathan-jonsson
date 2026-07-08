@@ -45,9 +45,9 @@
 	--surface-darker: var(--color-neutral-950);
 	--surface-lighter: var(--color-neutral-800);
 
-	--font-heading: font-family: "JetBrains Mono", monospace;
-	--font-normal: font-family: "Geist", sans-serif;
-	--font-accent: font-family: "Space Mono";
+	--font-heading: "JetBrains Mono", monospace;
+	--font-normal: "Geist", sans-serif;
+	--font-accent: "Space Mono";
 
 	--site-title-color: var(--primary-color);
 
