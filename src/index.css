@@ -48,6 +48,17 @@
 	--font-heading: "JetBrains Mono", monospace;
 	--font-normal: "Geist", sans-serif;
 	--font-accent: "Space Mono";
+	--font-color: var(--color-primary-100);
+	--font-size-3xs: 0.688rem;
+	--font-size-2xs: 0.75rem;
+	--font-size-xs: 0.813rem;
+	--font-size-sm: 0.938rem;
+	--font-size-md: 1rem;
+	--font-size-lg: 1.125rem;
+	--font-size-xl: 1.188rem;
+	--font-size-2xl: 1.313rem;
+	--font-size-3xl: 1.438rem;
+	--font-size-4xl: 1.62rem;
 
 	--site-title-color: var(--primary-color);
 
