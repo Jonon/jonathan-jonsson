@@ -15,3 +15,24 @@
 	font-size: var(--icon-size-2xl);
 	color: var(--icon-color);
 }
+
+.navigation ul {
+	display: flex;
+	flex-direction: row;
+	gap: 3rem;
+	font-family: var(--font-heading);
+}
+
+.navigation ul li {
+	display: flex;
+	list-style: none;
+	cursor: pointer;
+	color: var(--color-primary-100);
+	font-size: var(--font-size-xs);
+	font-size: var(--font-size-xs);
+	font-weight: var(--font-weight-light);
+}
+
+.navigation ul li:hover {
+	color: var(--color-primary-300);
+}
