@@ -1,5 +1,6 @@
 import { IoMenuSharp } from "react-icons/io5";
 import "./header.css";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 export default function Header() {
 	const { width } = useWindowDimensions();
@@ -24,7 +25,7 @@ export default function Header() {
 	return (
 		<div className="container">
 			<h1 className="title">Jonathan Jonsson</h1>
-			<IoMenuSharp className="IoMenuSharp" />
+			{width > 601 ? MenuList : <IoMenuSharp className="IoMenuSharp" />}
 		</div>
 	);
 }
