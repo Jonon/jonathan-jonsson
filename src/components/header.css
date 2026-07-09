@@ -8,7 +8,8 @@
 
 .title {
 	color: var(--site-title-color);
-	font-size: 1.3rem;
+	font-size: var(--font-size-3xl);
+	font-family: var(--font-heading);
 }
 
 .IoMenuSharp {
