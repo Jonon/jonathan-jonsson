@@ -99,3 +99,8 @@ p {
 	font-weight: 500;
 	font-style: normal;
 }
+
+.icon {
+	font-size: var(--icon-size-xl);
+	color: var(--icon-color);
+}
