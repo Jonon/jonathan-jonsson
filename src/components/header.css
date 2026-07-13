@@ -19,7 +19,7 @@
 	font-family: var(--font-heading);
 }
 
-.IoMenuSharp {
+.icon.icon-menu {
 	font-size: var(--icon-size-2xl);
 	color: var(--icon-color);
 }
