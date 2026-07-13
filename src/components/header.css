@@ -7,6 +7,12 @@
 	background-color: var(--surface);
 }
 
+@media (min-width: 960px) {
+	.container {
+		justify-content: space-around;
+	}
+}
+
 .title {
 	color: var(--site-title-color);
 	font-size: var(--font-size-3xl);

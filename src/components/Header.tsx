@@ -25,7 +25,7 @@ export default function Header() {
 	return (
 		<div className="container">
 			<h1 className="title">Jonathan Jonsson</h1>
-			{width > 601 ? MenuList : <IoMenuSharp className="IoMenuSharp" />}
+			{width > 960 ? MenuList : <IoMenuSharp className="IoMenuSharp" />}
 		</div>
 	);
 }
