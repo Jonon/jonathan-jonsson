@@ -1,6 +1,4 @@
 :root {
-	color-scheme: dark;
-
 	/* color palette */
 	--color-primary-50: #fff4e5;
 	--color-primary-100: #ffebd1;
@@ -81,6 +79,8 @@
 	--spacing-sm: 0.313rem;
 	--spacing-md: 0.625rem;
 	--spacing-lg: 0.938rem;
+
+	color-scheme: dark;
 }
 
 body {
