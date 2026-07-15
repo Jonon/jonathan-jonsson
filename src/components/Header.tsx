@@ -26,7 +26,7 @@ export default function Header() {
 	);
 
 	const MobileMenuList = (
-		<nav className="mobile-navigation">
+		<nav className="navigation">
 			<ul>
 				{list.map((listItem) => {
 					return (
