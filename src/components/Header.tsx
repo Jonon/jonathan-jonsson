@@ -2,11 +2,27 @@ import { IoMenuSharp } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
 import "./header.css";
 import useWindowDimensions from "../hooks/useWindowDimensions";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
 	const { width } = useWindowDimensions();
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+	useEffect(() => {
+		if (!isDropdownOpen) return;
+
+		const preventScroll = (e: Event) => {
+			e.preventDefault();
+		};
+
+		document.addEventListener("touchmove", preventScroll, { passive: false });
+		document.addEventListener("wheel", preventScroll, { passive: false });
+
+		return () => {
+			document.removeEventListener("touchmove", preventScroll);
+			document.removeEventListener("wheel", preventScroll);
+		};
+	}, [isDropdownOpen]);
 
 	const list = [
 		{ label: "Home" },
