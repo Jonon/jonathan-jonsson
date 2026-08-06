@@ -6,9 +6,15 @@
 }
 
 .profilePicture {
-	width: 12rem;
+	width: 15rem;
 	border-radius: 50%;
 	box-shadow: 0 0 5px 1px #929595ff;
+}
+
+@media (min-width: 600px) {
+	.profilePicture {
+		width: 11rem;
+	}
 }
 
 .jobTitle {
