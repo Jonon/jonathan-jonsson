@@ -1,18 +1,18 @@
 .introHeader {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 1rem;
 	align-items: center;
 }
 
 .profilePicture {
-	width: 15rem;
+	width: 12rem;
 	border-radius: 50%;
 	box-shadow: 0 0 5px 1px #929595ff;
 }
 
 .jobTitle {
-	font-weight: var(--font-weight-light);
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-medium);
 	color: var(--primary-color);
-	text-align: center;
 }
