@@ -1,6 +1,6 @@
 import { IoMenuSharp } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
-import "./header.css";
+import styles from "./header.module.css";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import { useEffect, useState } from "react";
 
@@ -32,7 +32,7 @@ export default function Header() {
 	];
 
 	const MenuList = (
-		<nav className="navigation">
+		<nav className={styles.navigation}>
 			<ul>
 				{list.map((listItem) => {
 					return <li>{listItem.label.toUpperCase()}</li>;
@@ -42,12 +42,12 @@ export default function Header() {
 	);
 
 	const MobileMenuList = (
-		<nav className="navigation">
+		<nav className={styles.navigation}>
 			<ul>
 				{list.map((listItem) => {
 					return (
 						<li>
-							<span className="mobile-nav-indicator"></span>
+							<span className={styles.mobileNavIndicator}></span>
 							{listItem.label.toUpperCase()}
 						</li>
 					);
@@ -58,24 +58,26 @@ export default function Header() {
 
 	return (
 		<>
-			<div className="container">
-				<h1 className="title">Jonathan Jonsson</h1>
+			<div className={styles.container}>
+				<h1 className={styles.title}>Jonathan Jonsson</h1>
 				{width > 960 ? (
 					MenuList
 				) : (
 					<IoMenuSharp
 						onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-						className="icon icon-menu"
+						className={`icon ${styles.iconMenu}`}
 					/>
 				)}
 			</div>
-			<div className={isDropdownOpen ? "overlay" : ""}></div>
+			<div className={isDropdownOpen ? styles.overlay : ""}></div>
 			<div
-				className={isDropdownOpen ? "dropdown-menu" : "dropdown-menu-display"}
+				className={
+					isDropdownOpen ? styles.dropdownMenu : styles.dropdownMenuDisplay
+				}
 			>
 				<IoCloseSharp
 					onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-					className="icon icon-close"
+					className={`icon ${styles.iconClose}`}
 				/>
 				{MobileMenuList}
 			</div>
