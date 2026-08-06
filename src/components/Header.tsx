@@ -69,7 +69,7 @@ export default function Header() {
 					/>
 				)}
 			</div>
-			<div className={isDropdownOpen ? "overlay" : "overlay-disable"}></div>
+			<div className={isDropdownOpen ? "overlay" : ""}></div>
 			<div
 				className={isDropdownOpen ? "dropdown-menu" : "dropdown-menu-display"}
 			>
