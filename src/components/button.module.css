@@ -1,0 +1,30 @@
+.btn {
+	cursor: pointer;
+	margin: 0.5rem 0;
+	padding: 0.5rem 0.5rem;
+	border: none;
+	border-radius: 0.2rem;
+	font-family: var(--font-accent);
+	color: var(--color-neutral-950);
+}
+
+.primary {
+	background-color: var(--primary-color);
+}
+
+.primary:hover {
+	background-color: var(--primary-color);
+	filter: brightness(1.05);
+}
+
+.secondary {
+	position: relative;
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.secondary:hover {
+	color: var(--color-neutral-950);
+	background-color: var(--primary-color);
+}
