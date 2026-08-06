@@ -1,5 +1,13 @@
 import Header from "./components/Header";
+import Intro from "./components/Intro";
 
 export default function App() {
-	return <Header />;
+	return (
+		<>
+			<Header />
+			<main>
+				<Intro />
+			</main>
+		</>
+	);
 }
