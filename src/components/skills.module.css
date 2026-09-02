@@ -1,0 +1,24 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	width: min(100%, 30rem);
+}
+
+@media (min-width: 960px) {
+	.container h2 {
+		text-align: center;
+	}
+}
+
+.skillList {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+	gap: 0.5rem;
+}
