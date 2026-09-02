@@ -22,3 +22,39 @@
 	height: 3.5rem;
 	font-size: 3.5rem;
 }
+
+.iconHtml:hover {
+	color: #e34c26;
+}
+
+.iconCss:hover {
+	color: #7c3aed;
+}
+
+.iconReact:hover {
+	color: #61dafb;
+}
+
+.iconJavascript:hover {
+	color: #f7df1e;
+}
+
+.iconTypescript:hover {
+	color: #3178c6;
+}
+
+.iconGithub:hover {
+	color: #fafafa;
+}
+
+.iconGit:hover {
+	color: #f1502f;
+}
+
+.iconFigma:hover {
+	color: #ffffff;
+}
+
+.iconPenpot:hover {
+	color: #ffffff;
+}

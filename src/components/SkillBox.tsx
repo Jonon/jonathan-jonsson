@@ -43,8 +43,14 @@ const icons: Record<IconName, IconType> = {
 export default function SkillBox({ title, icon }: SkillBoxProps) {
 	const Icon = icons[icon];
 
+	const capitalize = (value: string) =>
+		value.charAt(0).toUpperCase() + value.slice(1);
+	const modKey = `icon${capitalize(icon)}`;
+	const modifier = (styles as Record<string, string>)[modKey];
+	const boxClass = [styles.skillBox, modifier].filter(Boolean).join(" ");
+
 	return (
-		<div className={styles.skillBox}>
+		<div className={boxClass}>
 			{icon && <Icon className={styles.icon} />}
 			<span>{title}</span>
 		</div>
