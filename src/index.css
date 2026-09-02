@@ -103,6 +103,10 @@ body {
 	font-style: normal;
 }
 
+.section-title {
+	color: var(--primary-color);
+}
+
 p {
 	font-family: var(--font-normal);
 	font-optical-sizing: auto;
