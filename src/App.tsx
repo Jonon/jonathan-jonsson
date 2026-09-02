@@ -1,7 +1,7 @@
-import About from "./components/About";
-import Header from "./components/Header";
-import Intro from "./components/Intro";
-import Skills from "./components/Skills";
+import Header from "./components/layout/Header";
+import About from "./components/sections/about/About";
+import Intro from "./components/sections/intro/Intro";
+import Skills from "./components/sections/skills/Skills";
 
 export default function App() {
 	return (

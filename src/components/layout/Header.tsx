@@ -1,7 +1,7 @@
 import { IoMenuSharp } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
 import styles from "./header.module.css";
-import useWindowDimensions from "../hooks/useWindowDimensions";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { useEffect, useState } from "react";
 
 export default function Header() {
