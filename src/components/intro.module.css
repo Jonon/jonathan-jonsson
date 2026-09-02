@@ -9,7 +9,8 @@
 
 @media (min-width: 960px) {
 	.introContainer {
-		margin-top: 12rem;
+		height: 100dvh;
+		margin-top: 0rem;
 	}
 }
 
