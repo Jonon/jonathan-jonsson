@@ -29,3 +29,19 @@
 	color: var(--color-neutral-950);
 	background-color: var(--primary-color);
 }
+
+.tertiary {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+	color: var(--color-neutral-50);
+	background-color: var(--color-neutral-900);
+}
+
+.tertiary:hover {
+	filter: brightness(85%);
+}
